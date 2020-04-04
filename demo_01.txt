@@ -1,0 +1,32 @@
+package stepDefinitions;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class OpenGoogle {
+ @Given("^user is entering google\\.com$")
+ public void user_is_entering_google_com() throws Throwable {
+     // Write code here that turns the phrase above into concrete actions
+    System.out.println("User is on Google home");
+ }
+
+ @When("^user clicks the search box$")
+ public void user_clicks_the_search_box() throws Throwable {
+     // Write code here that turns the phrase above into concrete actions
+   System.out.println("User is clicking the search box");
+ }
+
+ @When("^types the search term as \"([^\"]*)\"$")
+ public void types_the_search_term_as(String arg1) throws Throwable {
+     // Write code here that turns the phrase above into concrete actions
+   System.out.println("User is typing the search term");
+ }
+
+ @Then("^the user should see the search results for Agniprasath$")
+ public void the_user_should_see_the_search_results_for_Agniprasath() throws Throwable {
+     // Write code here that turns the phrase above into concrete actions
+   System.out.println("User is seeing the search results");
+ }
+
+}
